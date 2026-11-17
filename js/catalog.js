@@ -101,32 +101,33 @@ const LEG_RUN = ['legs_heavy', 'legs_light', 'hills_short', 'hills_long', 'run_s
 export const GAPS = {
   // Gambe pesanti: 48-72h prima di rifare gambe o sprint.
   legs_heavy: {
-    legs_heavy: [2, 3], legs_light: [2, 2], hills_short: [2, 2], hills_long: [2, 3],
-    run_strides: [1, 2], run_steady: [1, 1], run_easy: [0, 1],
+    // Corsa vera mai a ridosso delle gambe pesanti: sempre almeno 2 giorni, meglio 3 con le salite.
+    legs_heavy: [2, 3], legs_light: [2, 2], hills_short: [2, 3], hills_long: [2, 3],
+    run_strides: [2, 2], run_steady: [2, 2], run_easy: [0, 1],
     // Niente gambe pesanti nelle 48h prima del calcetto; meglio 3 giorni.
     calcetto: [3, 3], beach: [2, 2],
   },
   legs_light: {
-    legs_heavy: [1, 2], legs_light: [1, 2], hills_short: [1, 1], hills_long: [1, 2],
-    run_strides: [0, 1], run_steady: [0, 1], calcetto: [2, 2], beach: [1, 2],
+    legs_heavy: [1, 2], legs_light: [1, 2], hills_short: [1, 2], hills_long: [1, 2],
+    run_strides: [1, 1], run_steady: [0, 1], calcetto: [2, 2], beach: [1, 2],
   },
   // Sprint in salita 10-15": 36-48h. Mai il giorno prima del calcetto.
   hills_short: {
-    hills_short: [2, 2], hills_long: [2, 2], legs_heavy: [1, 2], legs_light: [1, 1],
+    hills_short: [2, 2], hills_long: [2, 2], legs_heavy: [2, 3], legs_light: [1, 2],
     run_strides: [1, 1], run_steady: [1, 1], calcetto: [2, 2], beach: [2, 2],
   },
   // Salite lunghe 30-40": 48-72h.
   hills_long: {
-    hills_short: [2, 3], hills_long: [2, 3], legs_heavy: [2, 2], legs_light: [1, 2],
+    hills_short: [2, 3], hills_long: [2, 3], legs_heavy: [2, 3], legs_light: [1, 2],
     run_strides: [1, 2], run_steady: [1, 1], calcetto: [2, 3], beach: [2, 2],
   },
   run_strides: {
-    hills_short: [1, 1], hills_long: [1, 1], legs_heavy: [1, 1], run_strides: [1, 2],
+    hills_short: [1, 1], hills_long: [1, 1], legs_heavy: [2, 2], legs_light: [1, 1], run_strides: [1, 2],
     // Il giorno prima del calcetto solo defaticante.
     calcetto: [2, 2],
   },
   run_steady: {
-    legs_heavy: [1, 1], hills_short: [1, 1], hills_long: [1, 1], run_steady: [0, 1],
+    legs_heavy: [2, 2], hills_short: [1, 1], hills_long: [1, 1], run_steady: [0, 1],
     calcetto: [2, 2],
   },
   // Corsa facile / mobilità: 12-24h, nessun vincolo reale.

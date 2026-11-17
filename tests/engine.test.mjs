@@ -129,3 +129,24 @@ test('stampa una settimana di esempio', () => {
     console.log(d.date, d.ghost ? 'calcetto?' : d.suggestion?.type, '|', d.suggestion?.reasons.join(' · ') ?? '');
   }
 });
+
+test('gambe pesanti e corsa vera mai in giorni consecutivi', () => {
+  const RUN = ['run_steady', 'run_strides', 'hills_short', 'hills_long'];
+  const histories = [
+    week,
+    [...week, e(-1, 'calcetto')],
+    [e(-9, 'legs_heavy'), e(-5, 'pull'), e(-3, 'push'), e(-6, 'run_steady')],
+    [e(-12, 'legs_heavy'), e(-4, 'pull'), e(-2, 'hike', { dur: 200 }), e(-3, 'hills_short')],
+  ];
+  for (const h of histories) {
+    for (const assume of [true, false]) {
+      const p = plan(base(h, { settings: { assumeCalcetto: assume } }), TODAY);
+      const seq = p.days.map((d) => d.suggestion?.type);
+      for (let i = 0; i < seq.length - 1; i++) {
+        const pair = [seq[i], seq[i + 1]];
+        const bad = pair.includes('legs_heavy') && pair.some((t) => RUN.includes(t));
+        assert.ok(!bad, seq.join(','));
+      }
+    }
+  }
+});

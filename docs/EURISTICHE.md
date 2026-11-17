@@ -13,9 +13,9 @@ Valgono in entrambe le direzioni: "dopo le gambe pesanti aspetta 2 giorni per gl
 
 | Dopo… | Gambe pesanti | Gambe leggere | Sprint salita | Ripetute salita | Allunghi | Corsa costante | Stesso gruppo alto |
 |---|---|---|---|---|---|---|---|
-| Gambe pesanti | 2 (ideale 3) | 2 | 2 | 2 (3) | 1 (2) | 1 | – |
-| Sprint salita 10-15" | 2 | 1 | 2 | 2 | 1 | 1 | – |
-| Ripetute 30-40" | 2 | 1 (2) | 2 (3) | 2 (3) | 1 (2) | 1 | – |
+| Gambe pesanti | 2 (ideale 3) | 2 | 2 (3) | 2 (3) | 2 | 2 | – |
+| Sprint salita 10-15" | 2 (3) | 1 (2) | 2 | 2 | 1 | 1 | – |
+| Ripetute 30-40" | 2 (3) | 1 (2) | 2 (3) | 2 (3) | 1 (2) | 1 | – |
 | Calcetto | 3 | 2 | 2 | 3 | 2 | 2 | parte alta ok a +1 |
 | Beach volley **[nuova]** | 2 | 1 | 2 | 2 | 1 (2) | 1 | spinta +1 (spalle) |
 | Montagna **[nuova]** | 2 (3) | 1 (2) | 1 (2) | 2 | 1 | 1 | – |
@@ -29,6 +29,8 @@ Modificatori:
 - **Montagna**: oltre 4h +1 giorno, sotto 2h −1 giorno (la discesa è il vero carico sui quadricipiti). **[nuova]**
 - **Mai due sedute dure per le gambe consecutive**: gambe pesanti, sprint, ripetute, calcetto, beach volley e montagna oltre 2h30 richiedono sempre almeno 2 giorni tra loro.
 - **Gambe e salite nello stesso giorno**: vietato (finestra ≥ 1).
+- **Gambe pesanti e corsa vera** (costante, allunghi, sprint, ripetute): mai in giorni consecutivi, in nessuna delle due direzioni. Tra gambe e salite il coach preferisce 3 giorni. Il defaticante resta permesso il giorno dopo le gambe. **[nuova]**
+- **Gambe leggere e corsa intensa**: almeno un giorno tra le due. **[nuova]**
 
 ## 2. Calcetto
 
