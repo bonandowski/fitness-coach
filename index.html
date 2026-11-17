@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Coach</title>
   <meta name="description" content="Pianificazione allenamenti con consigli automatici">
-  <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#edf0ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1412" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -14,6 +14,9 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,7 +25,7 @@
     <span id="top-date"></span>
   </header>
   <main id="view"></main>
-  <button class="fab" data-action="add" aria-label="Aggiungi attività">+</button>
+  <button class="fab" data-action="log"><span aria-hidden="true">+</span>Registra</button>
   <nav class="tabs" aria-label="Sezioni">
     <button data-view="plan" class="on">Piano</button>
     <button data-view="stats">Statistiche</button>
