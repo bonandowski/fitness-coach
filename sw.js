@@ -1,5 +1,5 @@
 // Service worker: l'app funziona anche offline. Cambia VERSION a ogni rilascio.
-const VERSION = 'coach-v1';
+const VERSION = 'coach-v3';
 const ASSETS = [
   './', 'index.html', 'css/styles.css', 'js/app.js', 'js/engine.js', 'js/catalog.js',
   'js/stats.js', 'js/store.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-180.png',
